@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caravan - Local</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary fade" data-bs-toggle="modal" data-bs-target="#modalLogin">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-5" id="modalLabel">Entre na Sua Conta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+          </div>
+
+          <label for="inputPassword5" class="form-label">Password</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+          <button type="button" class="btn btn-primary my-3">Entrar na Conta</button>
+          <p class="small text-muted">Esqueceu a senha <span><a href="">Clique aqui.</a></span></p>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-md bg-light fixed-top py-3 box-shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="./img/caravan.svg" alt="Caravan"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" type="button" data-bs-toggle="dropdown " aria-expanded="false" href="#">Locais</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="local.html">California</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dublin</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="planos.html">Planos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+        <li class="nav-item ms-md-2">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary ms-md-2" href="inscricao">Inscreva-se</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<section class="container text-center">
+  <div class="my-5">
+    <span class="h6 d-block ">SEU PLANO, SUA VIAGEM</span>
+    <h1 class="display-4 text-primary">Escolha o Plano</h1>
+    <div class="row  pt-5">
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2 class="subtitle">Gold</h2>
+          <ul class="list-unstyled lista-plano">
+            <li> → 30 dias de viagem </li>
+            <li>→ 3 destinos diferentes</li>
+            <li>→ Tudo pago pela empresa</li>
+            <li>→ Ingressos para festas</li>
+          </ul>
+          <form>
+            <select class="form-select  bg-light" id="inputCidades" aria-label="Default select example">
+              <option selected>Selecione a cidade</option>
+              <option value="1">California</option>
+              <option value="2">Paris</option>
+              <option value="3">Dublin</option>
+            </select>
+          </form>
+          <div class="row mt-4 align-items-center m-auto">
+            <div class="col" style=" display:flex; justify-content: start;">
+              <a href="inscricao.html"><button type="button" class="btn btn-lg btn-block   btn-primary">Comprar Plano</button> </a>
+            </div>
+            <div class="col">
+              <span class="h4">
+                R$5000,00
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2 class="subtitle">Platinum <span class="badge text-bg-success ms-2 ">Novo</span></h2>
+          <ul class="list-unstyled lista-plano">
+            <li> → 60 dias de viagem </li>
+            <li>→ 6 destinos diferentes</li>
+            <li>→ Tudo pago pela empresa</li>
+            <li>→ Ingressos para festas</li>
+          </ul>
+          <form>
+            <select class="form-select bg-light" id="inputCidades" aria-label="Default select example">
+              <option selected>Selecione a cidade</option>
+              <option value="1">California</option>
+              <option value="2">Paris</option>
+              <option value="3">Dublin</option>
+            </select>
+          </form>
+          <div class="row mt-4 align-items-center m-auto">
+            <div class="col" style=" display:flex; justify-content: start;">
+              <a href="inscricao.html"><button type="button" class="btn btn-lg btn-block   btn-primary">Comprar Plano</button> </a>
+            </div>
+            <div class="col">
+              <span class="h4">
+                R$7000,00
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</section>
+
+<footer class="p-4 bg-dark justify-content-center text-white mt-5">
+  <div class="row m-auto" style="max-width: 1200px;">
+    <div class="col-md-3 col-6">
+      <h4 class="my-3 h6  text-uppercase">Páginas</h4>
+      <ul class="list-unstyled">
+        <li><a href="">Planos</a></li>
+        <li> <a href="">Contato</a> </li>
+        <li> <a href="">Inscreva-se</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3 col-6">
+      <h4 class="my-3 h6  text-uppercase">Locais</h4>
+      <ul class="list-unstyled">
+        <li><a href="">California</a></li>
+        <li> <a href="">Paris</a> </li>
+        <li> <a href="">Dublin</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h4 class="my-3 h6  text-uppercase">DADOS DE CONTATO</h4>
+      <ul class="list-unstyled text-secondary">
+        <li class=' small my-1'>caravan@caravan.com.br</li>
+        <li class=' small my-1'>21 99999-9999> </li>
+        <li class=' small my-1'>De Seg. à Sex. das 8h às 18h</li>
+      </ul>
+
+    </div>
+    <div class="col-md-2">
+      <h4 class="my-3 h6  text-uppercase">Redes Sociais</h4>
+      <ul class="list-unstyled">
+        <li> <a class=' small my-2 btn btn-outline-secondary  d-block btn-sm ' style="max-width: 140px;">Facebook</a> </li>
+        <li> <a class=' small my-2 btn btn-outline-secondary  d-block btn-sm ' style="max-width: 140px;">Twitter</a> </li>
+        <li> <a class=' small my-2 btn btn-outline-secondary  d-block btn-sm ' style="max-width: 140px;">Youtube</a> </li>
+      </ul>
+
+    </div>
+  </div>
+
+
+</footer>
+<footer class="py-3 bg-primary ">
+  <div class="row justify-content-center text-center">
+    <p class="text-white mb-0">Caravan © 2024. Alguns direitos reservados.</p>
+  </div>
+
+</footer>
+
+
+
+
+
+<body>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
